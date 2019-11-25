@@ -40,7 +40,6 @@ class MyWindowApp(App):
             self.lbl.text = 'Say Something'
             audio=r.listen(source)
         try:
-            print("Here 43")
             text = r.recognize_google(audio)
             print(text)
             self.lbl.text = text
